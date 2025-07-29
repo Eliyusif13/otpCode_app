@@ -1,4 +1,4 @@
-package com.sadiqov.loginservice.exxception;
+package com.sadiqov.loginservice.exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

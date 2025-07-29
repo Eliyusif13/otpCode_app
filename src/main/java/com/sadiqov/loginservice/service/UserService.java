@@ -67,6 +67,7 @@ public class UserService {
             smsSender.smsSender(phoneNumber, "Sizin təsdiq kodunuz: " + generatedOtp);
 
             OTP otp = user.getOtp() != null ? user.getOtp() : new OTP();
+
             otp.setOtpCode(generatedOtp);
             otp.setOtpRequestCount(0);
             otp.setLastOtpRequest(LocalDateTime.now());
